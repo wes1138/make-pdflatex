@@ -16,10 +16,11 @@ Features
 Usage
 -----
 
-Either
+If your main file is named `main.tex`, then it will work as-is.  Otherwise,
+either
 
 1. Edit the `TARGETS` variable to contain your pdf targets, or
-1. Invoke `make` like this: `make TARGETS=paper1.pdf paper2.pdf`.
+1. Invoke `make` like this: `make TARGETS="paper1.pdf paper2.pdf"`.
 
 Dependencies
 ------------
