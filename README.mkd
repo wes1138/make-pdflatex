@@ -1,0 +1,39 @@
+Generic pdflatex Makefile
+=========================
+
+Synopsis
+--------
+
+Short, simple, generic makefile for compiling tex via pdflatex.
+
+Features
+--------
+
+* Automatic dependency generation.
+* Supports multiple targets (paper+slides, NSF proposals...).
+* Handles bibtex, re-compiling if necessary.
+
+Usage
+-----
+
+Either
+
+1. Edit the `TARGETS` variable to contain your pdf targets, or
+1. Invoke `make` like this: `make TARGETS=paper1.pdf paper2.pdf`.
+
+Dependencies
+------------
+
+Works with TeX Live, and maybe other distributions.  Needs common unix tools
+like `grep` and `awk`, and of course `make`.
+
+References
+----------
+
+* [This article][autodeps] from the GNU Make maintainer was helpful.
+* Some of the content (re-running for bibtex) was inspired by former
+  co-authors of mine (can't remember who showed me first... o.o).
+
+
+
+[autodeps]: http://make.mad-scientist.net/papers/advanced-auto-dependency-generation/
